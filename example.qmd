@@ -1,0 +1,17 @@
+---
+title: "Presentation Title"
+format:
+  revealjs: default
+revealjs-plugins:
+  - tldraw
+---
+
+## Slide 1
+
+Your content here.
+
+Press **T** or open the Tools menu (☰) to toggle drawing mode.
+
+## Slide 2
+
+Drawings are saved per-slide and persist across page reloads.

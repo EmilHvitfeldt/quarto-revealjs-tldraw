@@ -1,0 +1,12 @@
+title: tldraw
+author: Emil Hvitfeldt
+version: 0.1.0
+quarto-required: ">=1.4.0"
+license: MIT
+contributes:
+  revealjs-plugins:
+    - name: RevealTldraw
+      script:
+        - tldraw.js
+      stylesheet:
+        - tldraw.css

@@ -1,0 +1,21 @@
+/* tldraw overlay container — full screen so UI elements appear at window edges */
+#tldraw-overlay-root {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  pointer-events: none;
+}
+
+#tldraw-overlay-root.tldraw-active {
+  pointer-events: all;
+}
+
+/* transparent background so slide content shows through */
+#tldraw-overlay-root .tl-background {
+  background: transparent !important;
+}
+
+/* hide watermark when not in drawing mode (hideUi does not control it) */
+#tldraw-overlay-root.tldraw-inactive .tl-watermark_SEE-LICENSE {
+  display: none !important;
+}
