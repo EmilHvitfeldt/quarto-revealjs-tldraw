@@ -1,6 +1,3 @@
 node_modules/
 .DS_Store
 
-# Rendered output — not part of the extension
-*.html
-*_files/
