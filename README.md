@@ -2,6 +2,8 @@
 
 A [Quarto](https://quarto.org) RevealJS extension that lets you draw on your slides using [tldraw](https://tldraw.dev) v4.
 
+![Demo](demo.gif)
+
 ## Installation
 
 ```bash
