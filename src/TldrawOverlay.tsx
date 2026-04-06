@@ -31,9 +31,10 @@ function loadStoredSnapshot(): TLEditorSnapshot | null {
 interface Props {
   deck: any
   slideWidth: number
+  licenseKey?: string
 }
 
-export function TldrawOverlay({ deck, slideWidth }: Props) {
+export function TldrawOverlay({ deck, slideWidth, licenseKey }: Props) {
   const editorRef = useRef<Editor | null>(null)
   const [isActive, setIsActive] = useState(false)
   const saveTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
@@ -168,6 +169,7 @@ export function TldrawOverlay({ deck, slideWidth }: Props) {
       onMount={handleMount}
       hideUi={!isActive}
       components={TLDRAW_COMPONENTS}
+      licenseKey={licenseKey}
     />
   )
 }

@@ -14,6 +14,7 @@ window.RevealTldraw = {
   init(deck: any) {
     const config = deck.getConfig()
     const slideWidth = config.width ?? 960
+    const licenseKey = config.tldraw?.['license-key'] ?? config.tldraw?.licenseKey
 
     const container = document.createElement('div')
     container.id = 'tldraw-overlay-root'
@@ -25,6 +26,7 @@ window.RevealTldraw = {
       <TldrawOverlay
         deck={deck}
         slideWidth={slideWidth}
+        licenseKey={licenseKey}
       />,
     )
 
