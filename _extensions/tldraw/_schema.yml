@@ -1,0 +1,9 @@
+$schema: "https://raw.githubusercontent.com/mcanouil/quarto-wizard/main/schema/schema-1.0.json"
+
+options:
+  tldraw:
+    description: "tldraw plugin options."
+    properties:
+      license-key:
+        type: string
+        description: "tldraw v4 license key for deployed presentations (required for https:// URLs that are not localhost)."

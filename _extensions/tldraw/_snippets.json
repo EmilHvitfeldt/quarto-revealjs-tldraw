@@ -1,0 +1,24 @@
+{
+  "tldraw:setup": {
+    "prefix": "tldraw:setup",
+    "description": "Enable tldraw drawing plugin in a RevealJS presentation.",
+    "body": [
+      "format:",
+      "  revealjs: default",
+      "revealjs-plugins:",
+      "  - tldraw"
+    ]
+  },
+  "tldraw:setup-licensed": {
+    "prefix": "tldraw:setup-licensed",
+    "description": "Enable tldraw with a license key for deployed presentations.",
+    "body": [
+      "format:",
+      "  revealjs: default",
+      "revealjs-plugins:",
+      "  - tldraw",
+      "tldraw:",
+      "  license-key: \"${1:tldraw-...}\""
+    ]
+  }
+}
